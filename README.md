@@ -21,8 +21,8 @@ A Streamlit-based web application that provides an intuitive interface for inter
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mysql-automation-tool.git
-cd mysql-automation-tool
+git clone https://github.com/vanshjaiswal138/SQL-Automation.git
+cd SQL-Automation
 ```
 
 2. Install required packages:
@@ -47,6 +47,27 @@ streamlit run ChatWithDB/app.py
 ```
 
 2. Access the web interface at `http://localhost:8501`
+
+## Deployment on Streamlit Cloud
+
+1. Fork this repository to your GitHub account
+2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
+3. Sign in with your GitHub account
+4. Click "New app"
+5. Select your forked repository
+6. Set the main file path as `ChatWithDB/app.py`
+7. Add your secrets in the Streamlit Cloud dashboard:
+   - Go to your app settings
+   - Click on "Secrets"
+   - Add your environment variables in the following format:
+   ```toml
+   DB_HOST = "your_host"
+   DB_USER = "your_username"
+   DB_PASSWORD = "your_password"
+   DB_NAME = "your_database"
+   GROQ_API_KEY = "your_groq_api_key"
+   ```
+8. Click "Deploy"
 
 ## Project Structure
 
